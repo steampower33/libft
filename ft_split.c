@@ -6,13 +6,13 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 18:55:16 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/24 21:35:26 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:10:54 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_res_len(const char *s, char c, size_t start, size_t end)
+static size_t	ft_res_len(const char *s, char c, size_t start, size_t end)
 {
 	size_t	cnt;
 
@@ -32,7 +32,7 @@ size_t	ft_res_len(const char *s, char c, size_t start, size_t end)
 	return (cnt + 1);
 }
 
-char	*ft_strndup(const char *src, size_t size, size_t *is_null)
+static char	*ft_strndup(const char *src, size_t size, size_t *is_null)
 {
 	size_t	dest_len;
 	char	*dest;
@@ -53,7 +53,7 @@ char	*ft_strndup(const char *src, size_t size, size_t *is_null)
 	return (dest);
 }
 
-void	ft_all_free(char	**result)
+static void	ft_all_free(char	**result)
 {
 	size_t	idx;
 
@@ -66,7 +66,7 @@ void	ft_all_free(char	**result)
 	free(result);
 }
 
-size_t	ft_do_split(char **result, char const *s, char c)
+static size_t	ft_do_split(char **result, char const *s, char c)
 {
 	size_t	start;
 	size_t	end;

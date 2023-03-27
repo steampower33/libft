@@ -6,13 +6,13 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 22:13:48 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/24 22:10:18 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:10:06 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi_func(const char *str, int start, int end)
+static int	ft_atoi_func(const char *str, int start, int end)
 {
 	int	num;
 
@@ -25,7 +25,7 @@ int	ft_atoi_func(const char *str, int start, int end)
 	return (num);
 }
 
-int	ft_isspace(const char *str, int len)
+static int	ft_isspace(const char *str, int len)
 {
 	while (str[len])
 	{
@@ -37,7 +37,7 @@ int	ft_isspace(const char *str, int len)
 	return (len);
 }
 
-int	ft_issign(const char *str, int str_len, int *minus)
+static int	ft_issign(const char *str, int str_len, int *minus)
 {
 	int	sign_cnt;
 

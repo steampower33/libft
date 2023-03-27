@@ -6,13 +6,13 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 15:49:34 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/23 18:01:19 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:10:20 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_itoa_rec(char *res, long n)
+static void	ft_itoa_rec(char *res, long n)
 {
 	size_t	idx;
 
@@ -39,7 +39,7 @@ void	ft_itoa_rec(char *res, long n)
 	}
 }
 
-size_t	ft_ilen(long n)
+static size_t	ft_ilen(long n)
 {
 	int	cnt;
 

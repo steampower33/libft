@@ -6,13 +6,13 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 21:19:17 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/24 21:36:02 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:11:30 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_is_set(char c, char const *set)
+static size_t	ft_is_set(char c, char const *set)
 {
 	size_t	idx;
 
@@ -26,7 +26,7 @@ size_t	ft_is_set(char c, char const *set)
 	return (0);
 }
 
-size_t	ft_get_start(char const *s1, char const *set)
+static size_t	ft_get_start(char const *s1, char const *set)
 {
 	size_t	idx;
 
@@ -40,7 +40,7 @@ size_t	ft_get_start(char const *s1, char const *set)
 	return (idx);
 }
 
-size_t	ft_get_end(char const *s1, char const *set)
+static size_t	ft_get_end(char const *s1, char const *set)
 {
 	size_t	idx;
 

@@ -6,13 +6,14 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 11:53:23 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/24 21:35:47 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:11:50 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char const *s, char	*sub_s, unsigned int start, size_t len)
+static char	*ft_strcpy(
+	char const *s, char	*sub_s, unsigned int start, size_t len)
 {
 	size_t	idx;
 

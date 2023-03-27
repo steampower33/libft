@@ -6,13 +6,13 @@
 /*   By: seunlee2 <seunlee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 20:40:02 by seunlee2          #+#    #+#             */
-/*   Updated: 2023/03/24 21:35:55 by seunlee2         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:11:09 by seunlee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *s, const char *s1, const char *s2)
+static char	*ft_strcat(char *s, const char *s1, const char *s2)
 {
 	size_t	idx;
 
